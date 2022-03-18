@@ -5,7 +5,9 @@ from pprint import pprint
 url = "https://api.icndb.com/jokes/random"
 
 payload={}
-headers = {}
+headers = {
+  'Accept': 'application/json'
+}
 
 response = requests.request("GET", url, headers=headers, data=payload)
 
